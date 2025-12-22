@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO -->
+    <meta name="description" content="Stereo Revelación Radio - Radio Cristiana en Perú, llevando la palabra de Dios a nivel mundial">
+    <title>Stereo Revelación Radio - Radio Cristiana, Perú</title>
+    
+    <!-- Favicon - Un solo archivo para todos los dispositivos -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="apple-touch-icon" href="images/favicon.png">
+    
+    <!-- Estilos -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+        <!-- volver arriba Button -->
+<a href="#home" class="scroll-to-top" id="scrollToTop" aria-label="Volver arriba">
+    <svg viewBox="0 0 24 24" fill="currentColor">
+        <path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"/>
+    </svg>
+</a>
+        <!-- WhatsApp Button -->
+    <a href="https://api.whatsapp.com/send?phone=51931093417" class="whatsapp-float" target="_blank" aria-label="Contactar por WhatsApp">
+        <svg viewBox="0 0 32 32" fill="currentColor">
+            <path d="M16 0C7.164 0 0 7.164 0 16c0 2.825.737 5.478 2.023 7.777L.697 30.32l6.792-1.778A15.917 15.917 0 0016 32c8.836 0 16-7.164 16-16S24.836 0 16 0zm9.508 22.711c-.397 1.122-2.318 2.054-3.183 2.185-.865.13-1.592.651-5.357-.999-4.547-1.992-7.487-6.588-7.713-6.891-.227-.303-1.849-2.46-1.849-4.691 0-2.231 1.17-3.327 1.585-3.778.415-.451.906-.564 1.208-.564.303 0 .605.001.871.016.279.014.653-.106.919.701.34.925 1.161 2.83 1.263 3.036.102.205.17.445.034.723-.136.279-.204.452-.408.695-.203.243-.428.543-.612.729-.204.206-.417.428-.179.839.238.41 1.058 1.746 2.272 2.826 1.562 1.39 2.876 1.823 3.287 2.028.41.206.649.172.888-.103.238-.274.999-1.19 1.267-1.6.267-.41.534-.342.903-.206.369.137 2.342 1.105 2.745 1.306.403.2.672.3.77.469.097.168.097 1.031-.301 2.153z"/>
+        </svg>
+    </a>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-container">
+                    <img src="images/logo.png" alt="Stereo Revelación Radio Logo" class="logo">
+                </div>
+
+                <!-- Radio Player -->
+                <div class="radio-player">
+                    <button id="playBtn" class="play-btn" aria-label="Reproducir radio">
+                        <svg class="play-icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M8 5v14l11-7z"/>
+                        </svg>
+                        <svg class="pause-icon hidden" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M6 4h4v16H6V4zm8 0h4v16h-4V4z"/>
+                        </svg>
+                    </button>
+                    <div class="volume-control">
+                        <svg viewBox="0 0 24 24" fill="currentColor" class="volume-icon">
+                            <path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02z"/>
+                        </svg>
+                        <input type="range" id="volumeSlider" min="0" max="100" value="70" class="volume-slider">
+                    </div>
+                </div>
+
+                <!-- Menu Toggle -->
+                <div class="menu-toggle" id="menuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <!-- Navigation -->
+                <nav class="nav" id="mainNav">
+                    <ul class="nav-list">
+    <li><a href="#home" class="nav-link">INICIO</a></li>
+    <li><a href="#quienes-somos" class="nav-link">QUIÉNES SOMOS</a></li>
+    <li><a href="#blog" class="nav-link">BLOG</a></li>
+    <li><a href="#app" class="nav-link">APP</a></li>
+    <li><a href="#programas" class="nav-link">PROGRAMAS</a></li>
+    <li><a href="#contacto" class="nav-link">CONTACTO</a></li>
+</ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section - REEMPLAZA tu sección hero completa -->
+<section id="home" class="hero">
+    <div class="hero-slider">
+        <div class="hero-slide active">
+            <img src="images/hero1.jpg" alt="Stereo Revelación Radio">
+        </div>
+        <div class="hero-slide">
+            <img src="images/hero2.jpg" alt="Radio Station">
+        </div>
+        <div class="hero-slide">
+            <img src="images/hero3.jpg" alt="Broadcasting">
+        </div>
+    </div>
+    <div class="hero-overlay">
+        <div class="hero-content-center">
+            <h1 class="hero-title">
+                <span class="hero-line">STEREO</span>
+                <span class="hero-line">REVELACIÓN</span>
+                <span class="hero-line">RADIO</span>
+            </h1>
+            <div class="social-links-hero">
+                <a href="https://www.facebook.com/profile.php?id=100067028263478" target="_blank" aria-label="Facebook">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                    </svg>
+                </a>
+                <a href="https://www.youtube.com/@stereorevelacionradio" target="_blank" aria-label="YouTube">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Quiénes Somos -->
+    <section id="quienes-somos" class="section quienes-somos-section">
+        <div class="container">
+            <div class="section-title">
+                <h2 class="title-back">QUIÉNES SOMOS</h2>
+                <p class="title-front">RESEÑA HISTÓRICA</p>
+            </div>
+            <div class="quienes-grid">
+                <div class="quienes-image">
+                    <img src="images/sidebar.jpg" alt="Quiénes Somos">
+                </div>
+                <div class="quienes-text">
+                    <p>Somos una radio que inicio en tiempos de Pandemia (Covid 19) Para atender las necesidades espirituales de nuestros oyentes.</p>
+                    <p>Comenzado a compartir audios grabados con un celular, oraciones, cantos, testimonios y predicación de la palabra.</p>
+                    <p>Fue el programa "Amaneciendo con Dios" el más solicitado por los oyentes, quienes eran bendecidos, fortalecidos y consolados en aquellos momentos.</p>
+                    <p>Países como Chile en la Región de los Ríos, José Hermosilla; en Europa – Alemania: Teodora Mattos; en el Vaticano – Roma: Efigenia Rodríguez; En el África Pastor: Diosdado; en Barcelona España : Pilar Angulo y muchos más se fueron integrando.</p>
+                    <p>Conscientes de que nuestros sencillos audios habían traspasado las fronteras de Perú hacia otros países, nos vimos en la necesidad de hacer mejoras en la calidad de audio. Para lo cual adquirimos consolas, micrófonos y demás equipos profesionales.</p>
+                    <p><strong>02-Oct-2020,</strong> Se le da el nombre de <strong>"Stereo Revelación Radio"</strong> que seguía compartiendo programas en audio solo por whatsapp.</p>
+                    <p><strong>14-Feb-2021</strong>, Se lanzó la señal digital por primera vez a través del internet en nuestro Blogger y creamos nuestra App para smartphone.</p>
+                    <p><strong>Diciembre 2022</strong>, Damos toda la gloria a Nuestro Señor quien nos ayudó a tener esta página web y nos sigue ayudando para llegar a muchas personas que a diario nos llaman de diferentes países agradecidos por lo que Dios hace en sus vidas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section - REEMPLAZA tu sección actual de blog -->
+<section id="blog" class="section blog">
+    <div class="container">
+        <div class="section-title">
+            <h2 class="title-back">NUESTRO BLOG</h2>
+            <p class="title-front">ÚLTIMOS POST</p>
+        </div>
+        <div class="blog-grid">
+    <!-- Blog 3 - Acepta tu Llamado 2026 (MÁS RECIENTE) -->
+    <article class="blog-card">
+        <img src="images/pedro.png" alt="Acepta tu Llamado 2026">
+        <div class="blog-content">
+            <h3>2026 Acepta tu Llamado</h3>
+            <p class="date">diciembre 22, 2025</p>
+            <p>El apóstol Pedro, pescador de profesión, escuchó un día a Jesús decirle: "Sígueme"...</p>
+            <button class="btn-read" data-blog="blog3">Leer más</button>
+        </div>
+    </article>
+
+    <!-- Blog 1 - Aniversario -->
+    <article class="blog-card">
+        <img src="images/blog1.jpg" alt="Feliz 2do Aniversario">
+        <div class="blog-content">
+            <h3>Feliz 2do Aniversario</h3>
+            <p class="date">febrero 14, 2023</p>
+            <p>FELIZ II ANIVERSARIO Esta fecha muy especial recordamos con nostalgia los inicios de nuestra emisora...</p>
+            <button class="btn-read" data-blog="blog1">Leer más</button>
+        </div>
+    </article>
+
+    <!-- Blog 2 - Bendecido 2023 (MÁS ANTIGUO) -->
+    <article class="blog-card">
+        <img src="images/blog2.jpg" alt="Bendecido 2023">
+        <div class="blog-content">
+            <h3>Bendecido 2023</h3>
+            <p class="date">enero 3, 2023</p>
+            <p>Querida Audiencia. Todos debemos saber que Dios es. Desde la ETERNIDAD hasta la ETERNIDAD...</p>
+            <button class="btn-read" data-blog="blog2">Leer más</button>
+        </div>
+    </article>
+
+
+<!-- Apoyo
+    <article class="blog-card">
+        <img src="images/apoyo3.png" alt="Apoya">
+        <div class="blog-content">
+            <h3>Se parte de Stereo Revelación Radio</h3>
+            <p class="date">diciembre 20, 2025</p>
+            <p>Si esta plataforma ha sido de bendición para tu vida y deseas colaborar ...</p>
+            <button class="btn-read" data-blog="blog4">Leer más</button>
+        </div>
+    </article> 
+            -->
+
+            
+</div>
+    </div>
+</section>
+
+<!-- Modal para Blog -->
+<div id="blogModal" class="blog-modal">
+    <div class="blog-modal-content">
+        <span class="blog-modal-close">&times;</span>
+        <div class="blog-modal-body">
+            <img id="modalImage" src="" alt="">
+            <h2 id="modalTitle"></h2>
+            <p class="date" id="modalDate"></p>
+            <div id="modalText"></div>
+        </div>
+    </div>
+</div>
+
+    <!-- Versículo -->
+    <section class="verse-section">
+        <div class="verse-bg">
+            <img src="images/hero3.jpg" alt="Background">
+        </div>
+        <div class="container">
+            <blockquote class="verse">
+                <p>"No añadan ni quiten una sola palabra de lo que yo les mando, sino cumplan los mandamientos del Señor su Dios, que yo les ordeno observar."</p>
+                <cite>Deuteronomio 4:2</cite>
+            </blockquote>
+        </div>
+    </section>
+
+    <!-- Visión y Misión -->
+    <section class="section vision-mision">
+        <div class="container">
+            <div class="vm-grid">
+                <div class="vm-card">
+                    <img src="images/logo.png" alt="Visión" class="vm-icon">
+                    <h3>VISIÓN</h3>
+                    <ul>
+                        <li>Extender el evangelio de nuestro Señor Jesucristo, haciendo uso de la tecnología y usando todos los medios posibles para lograrlo.</li>
+                        <li>Adquirir equipos electrónicos actualizados y capacitación mediante conferencias o charlas para compartir en lo mejor posible la palabra de Dios que nunca va a cambiar.</li>
+                        <li>Exaltando a Dios con humildad y gratitud por los logros alcanzados y orando para que su presencia nunca se aparte de nosotros.</li>
+                    </ul>
+                </div>
+                <div class="vm-card">
+                    <img src="images/logo.png" alt="Misión" class="vm-icon">
+                    <h3>MISIÓN</h3>
+                    <ul>
+                        <li>Emitir programas de la mejor calidad tanto en sonido como en contenido.</li>
+                        <li>Llevando así cada día la palabra de Dios a nivel mundial con programas que nos acerquen a la presencia de Dios.</li>
+                        <li>Impactando el presente con un mensaje eterno.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- App Promo -->
+<section id="app" class="section app-promo">
+    <div class="container">
+        <div class="section-title">
+            <h2 class="title-back" style="color: var(--secondary);">INSTALA NUESTRA</h2>
+            <p class="title-front">APP</p>
+        </div>
+        <a href="https://compuzettaradios.github.io/SRR/" target="_blank">
+            <img src="images/app-promo.png" alt="Instala nuestra App">
+        </a>
+    </div>
+</section>
+
+<!-- Sección Video YouTube -->
+<section class="section video-section">
+    <div class="container">
+        <div class="section-title">
+            <h2 class="title-back">VIDEO</h2>
+            <p class="title-front">CONÓCENOS MÁS</p>
+        </div>
+        <div class="video-container">
+            <iframe 
+                src="https://www.youtube.com/embed/r1XziiEOktw" 
+                title="Stereo Revelación Radio - Video" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowfullscreen>
+            </iframe>
+        </div>
+    </div>
+</section>
+
+  
+    <!-- Programas -->
+    <section id="programas" class="section programas-vivo">
+        <div class="container">
+            <div class="section-title">
+                <h2 class="title-back">PROGRAMAS</h2>
+                <p class="title-front">EN VIVO (HORA PERÚ)</p>
+            </div>
+            
+            <div class="carousel-container">
+                <div class="carousel-track" id="carouselTrack">
+                    <div class="carousel-slide">
+                        <img src="images/amaneciendo-con-dios.png" alt="Amaneciendo con Dios">
+                        <div class="carousel-text">
+                            <h4>De 4am a 6am - Lunes a Domingo</h4>
+                            <h3>AMANECIENDO CON DIOS</h3>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="images/tiempos-de-clamor.jpg" alt="Tiempos de Clamor">
+                        <div class="carousel-text">
+                            <h4>De 4am a 5am - Todos los Viernes</h4>
+                            <h3>TIEMPOS DE CLAMOR A DIOS</h3>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="images/noches-gratitud.jpg" alt="Noches de Gratitud">
+                        <div class="carousel-text">
+                            <h4>Todos los Domingos de 8pm a 10pm</h4>
+                            <h3>NOCHES DE GRATITUD</h3>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="images/noches-vigilia.jpg" alt="Noches de Vigilia">
+                        <div class="carousel-text">
+                            <h4>Todos los viernes desde las 8pm</h4>
+                            <h3>NOCHES DE VIGILIA RADIAL</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="carousel-controls">
+                <button class="carousel-btn" id="prevBtn">‹</button>
+                <button class="carousel-btn" id="nextBtn">›</button>
+            </div>
+
+            <div class="whatsapp-cta">
+                <h3>ÚNETE A NUESTRO GRUPO</h3>
+                <p>Únete a nuestro grupo de WhatsApp</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Programas por WhatsApp -->
+<section class="section programas-wsp">
+    <div class="container">
+        <div class="section-title">
+            <h2 class="title-back">PROGRAMAS</h2>
+            <p class="title-front">COMPARTIDOS POR WHATSAPP</p>
+        </div>
+        <blockquote class="verse-mini">
+            <p>"Id, pues, y haced discípulos de todas las naciones, bautizándolos en el nombre del Padre y del Hijo y del Espíritu Santo."</p>
+            <cite>Mateo 28:19</cite>
+        </blockquote>
+        <div class="programas-list">
+            <div class="programa-item">
+                <div class="programa-icon"><img src="images/voice.png" alt="Micrófono"></div>
+                <div>
+                    <h4>TIEMPOS FINALES</h4>
+                    <p>Evangelista: Delma Chávez – Nicaragua.</p>
+                </div>
+            </div>
+            <div class="programa-item">
+                <div class="programa-icon"><img src="images/voice.png" alt="Micrófono"></div>
+                <div>
+                    <h4>LA LLAMADA FINAL</h4>
+                    <p>Evangelista: Diana del Pilar – Colombia.</p>
+                </div>
+            </div>
+            <div class="programa-item">
+                <div class="programa-icon"><img src="images/voice.png" alt="Micrófono"></div>
+                <div>
+                    <h4>UN MENSAJE A LA CONCIENCIA</h4>
+                    <p>Hno. Pablo</p>
+                </div>
+            </div>
+            <div class="programa-item">
+                <div class="programa-icon"><img src="images/voice.png" alt="Micrófono"></div>
+                <div>
+                    <h4>EN CONTACTO CON DIOS</h4>
+                    <p>Evangelista: Víctor Fernández - Pto. Rico.</p>
+                </div>
+            </div>
+            <div class="programa-item">
+                <div class="programa-icon"><img src="images/voice.png" alt="Micrófono"></div>
+                <div>
+                    <h4>AMIGOS DE DIOS</h4>
+                    <p>Pastor: Marcelo Barzola – Brasil.</p>
+                </div>
+            </div>
+            <div class="programa-item">
+                <div class="programa-icon"><img src="images/voice.png" alt="Micrófono"></div>
+                <div>
+                    <h4>LA VOZ DE LA VERDAD</h4>
+                    <p>Pastor: Antonio Orahulio – Venezuela.</p>
+                </div>
+            </div>
+            <div class="programa-item">
+                <div class="programa-icon"><img src="images/voice.png" alt="Micrófono"></div>
+                <div>
+                    <h4>CAFÉ CON JESÚS</h4>
+                    <p>Pastor: Evans Bustamante - Perú</p>
+                </div>
+            </div>
+            <div class="programa-item">
+                <div class="programa-icon"><img src="images/voice.png" alt="Micrófono"></div>
+                <div>
+                    <h4>UNA PALABRA DE FE</h4>
+                    <p>Evangelista: Luis Ángel Cosio – Perú.</p>
+                </div>
+            </div>
+            <div class="programa-item">
+                <div class="programa-icon"><img src="images/voice.png" alt="Micrófono"></div>
+                <div>
+                    <h4>TIEMPOS DE QUEBRANTO</h4>
+                    <p>Pastor: Percy A. Quiroz – Perú</p>
+                </div>
+            </div>
+            <div class="programa-item">
+                <div class="programa-icon"><img src="images/voice.png" alt="Micrófono"></div>
+                <div>
+                    <h4>ALIENTO DE DIOS PARA MI FAMILIA</h4>
+                    <p>Evangelista: Constantino Varas de Valdez – México</p>
+                </div>
+            </div>
+            <div class="programa-item">
+                <div class="programa-icon"><img src="images/voice.png" alt="Micrófono"></div>
+                <div>
+                    <h4>UNA VOZ QUE CLAMA EN EL DESIERTO</h4>
+                    <p>Evangelista: Alejandro Santos – Rep. Dominicana.</p>
+                </div>
+            </div>
+            <div class="programa-item">
+                <div class="programa-icon"><img src="images/voice.png" alt="Micrófono"></div>
+                <div>
+                    <h4>CELESTIAL STEREO</h4>
+                    <p>Evangelista: Iván Alarcón – Colombia</p>
+                </div>
+            </div>
+            <div class="programa-item">
+                <div class="programa-icon"><img src="images/voice.png" alt="Micrófono"></div>
+                <div>
+                    <h4>UNA ESPERANZA VIVA</h4>
+                    <p>Pastora Lesly Barrientos – México</p>
+                </div>
+            </div>
+            <div class="programa-item">
+                <div class="programa-icon"><img src="images/voice.png" alt="Micrófono"></div>
+                <div>
+                    <h4>ACORDES Y MELODÍAS ANDINAS</h4>
+                    <p>Urcinio Noriega – Perú</p>
+                </div>
+            </div>
+            <div class="programa-item">
+                <div class="programa-icon"><img src="images/voice.png" alt="Micrófono"></div>
+                <div>
+                    <h4>RANCHERAS CRISTIANAS</h4>
+                    <p>Victoria Lozada – Perú</p>
+                </div>
+            </div>
+            <div class="programa-item">
+                <div class="programa-icon"><img src="images/voice.png" alt="Micrófono"></div>
+                <div>
+                    <h4>REPORTAJE SEMANAL</h4>
+                    <p>Noemi Caballero</p>
+                </div>
+            </div>
+            <div class="programa-item">
+                <div class="programa-icon"><img src="images/voice.png" alt="Micrófono"></div>
+                <div>
+                    <h4>TESTIMONIOS IMPACTANTES</h4>
+                    <p>Ve y cuenta a los tuyos cuan grandes cosas a hecho Dios contigo y como a tenido de ti misericordia</p>
+                </div>
+            </div>
+            <div class="programa-item">
+                <div class="programa-icon"><img src="images/voice.png" alt="Micrófono"></div>
+                <div>
+                    <h4>ESTO ES UN MOMENTO CON DIOS</h4>
+                    <p>Los mejores momentos que pasamos en la Vida, Son aquellos que lo pasamos con Dios.</p>
+                </div>
+            </div>
+            <div class="programa-item">
+                <div class="programa-icon"><img src="images/voice.png" alt="Micrófono"></div>
+                <div>
+                    <h4>LA PALABRA DE DIOS</h4>
+                    <p>Susy Taveras – EE.UU</p>
+                </div>
+            </div>
+            <div class="programa-item">
+                <div class="programa-icon"><img src="images/voice.png" alt="Micrófono"></div>
+                <div>
+                    <h4>ESTO ES UN MOMENTO CON DIOS</h4>
+                    <p>Dalia Alfonso Coll – CUBA</p>
+                </div>
+            </div>
+            <div class="programa-item">
+                <div class="programa-icon"><img src="images/voice.png" alt="Micrófono"></div>
+                <div>
+                    <h4>MOMENTOS CON EL ESPÍRITU SANTO</h4>
+                    <p>Carmen Gonzales - Los Ángeles California</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Galería -->
+    <section id="galeria" class="section galeria">
+        <div class="container">
+            <div class="section-title">
+                <h2 class="title-back">GALERÍA</h2>
+                <p class="title-front">NUESTRO TRABAJO</p>
+            </div>
+            <blockquote class="verse-mini">
+                <p>"Hagan lo que hagan, trabajen de buena gana, como para el Señor y no como para nadie en este mundo, conscientes de que el Señor los recompensará con la herencia. Ustedes sirven a Cristo el Señor."</p>
+                <cite>Colosenses 3:23-24</cite>
+            </blockquote>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="images/gallery1.jpg" alt="Trabajo 1">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery2.jpg" alt="Trabajo 2">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery3.jpg" alt="Trabajo 3">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery4.jpg" alt="Trabajo 4">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery5.jpg" alt="Trabajo 5">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery6.jpg" alt="Trabajo 6">
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Contacto -->
+<section id="contacto" class="section contacto">
+    <div class="container">
+        <div class="section-title">
+            <h2 class="title-back">CONTACTO</h2>
+            <p class="title-front">CONTÁCTANOS</p>
+        </div>
+        
+        <!-- Datos de contacto -->
+        <div style="text-align: center; margin-bottom: 30px; color: var(--text-light); font-size: 1.1rem;">
+            <p style="margin: 10px 0;">📞 +51 931 093 417</p>
+            <p style="margin: 10px 0;">📧 radio2021srr@gmail.com</p>
+            <p style="margin: 10px 0;">📍 Chimbote Perú</p>
+        </div>
+   <!-- Formulario -->
+        <form class="contact-form" action="https://formsubmit.co/radio2021srr@gmail.com" method="POST">
+    <!-- Configuración de FormSubmit -->
+    <input type="hidden" name="_subject" value="Nuevo mensaje desde Stereo Revelación Radio">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_template" value="table">
+    <input type="hidden" name="_next" value="https://compuzettaradios.github.io/streaming/">
+    <input type="text" name="_honey" style="display:none">
+    
+    <div class="form-group">
+        <label for="nombre">Nombre *</label>
+        <input type="text" id="nombre" name="nombre" required>
+    </div>
+    <div class="form-group">
+        <label for="telefono">Teléfono *</label>
+        <input type="tel" id="telefono" name="telefono" required>
+    </div>
+    <div class="form-group">
+        <label for="email">Correo electrónico *</label>
+        <input type="email" id="email" name="email" required>
+    </div>
+    <div class="form-group">
+        <label for="mensaje">Comentario o mensaje</label>
+        <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+    </div>
+    <button type="submit" class="btn-submit">Enviar</button>
+</form>
+    </div>
+</section>
+
+    <!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-bottom">
+            <p>&copy; 2025 Stereo Revelación Radio, Perú - Create by CompuZetta</p>
+        </div>
+    </div>
+</footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
