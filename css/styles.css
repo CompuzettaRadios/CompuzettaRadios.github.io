@@ -1291,7 +1291,7 @@ body {
    ======================================== */
 
 .popup-overlay {
-    display: none; /* ← CAMBIAR de "none" A "flex" PARA ACTIVAR EL POPUP */
+    display: flex; /* ← CAMBIAR de "none" A "flex" PARA ACTIVAR EL POPUP */
     position: fixed;
     top: 0;
     left: 0;
