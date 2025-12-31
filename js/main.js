@@ -431,3 +431,69 @@ window.addEventListener('scroll', () => {
 
 // Scroll suave al hacer clic (ya tienes esto en tu código, pero por si acaso)
 // Si ya tienes un scroll smooth para los anchors, este botón funcionará automáticamente
+
+        /* ========================================
+           POPUP AÑO NUEVO - JAVASCRIPT
+           Copiar este código al final de js/main.js
+           ======================================== */
+        
+        const popupOverlay = document.getElementById('popupAnoNuevo');
+        const closePopupBtn = document.getElementById('closePopup');
+
+        // Verificar si el popup ya fue mostrado en esta sesión
+        const popupMostrado = sessionStorage.getItem('popupAnoNuevoMostrado');
+
+        // Si no se ha mostrado, mostrarlo después de 1 segundo
+        if (!popupMostrado && popupOverlay) {
+            setTimeout(() => {
+                popupOverlay.style.display = 'flex';
+                document.body.style.overflow = 'hidden'; // Bloquear scroll
+            }, 1000); // Espera 1 segundo después de cargar la página
+        } else if (popupOverlay) {
+            popupOverlay.style.display = 'none'; // Ya fue mostrado, ocultarlo
+        }
+
+        // Cerrar popup con botón X
+        if (closePopupBtn) {
+            closePopupBtn.addEventListener('click', cerrarPopup);
+        }
+
+        // Cerrar popup al hacer clic fuera del contenedor
+        if (popupOverlay) {
+            popupOverlay.addEventListener('click', (e) => {
+                if (e.target === popupOverlay) {
+                    cerrarPopup();
+                }
+            });
+        }
+
+        // Cerrar popup con tecla ESC
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && popupOverlay && popupOverlay.style.display === 'flex') {
+                cerrarPopup();
+            }
+        });
+
+        function cerrarPopup() {
+            if (popupOverlay) {
+                popupOverlay.style.animation = 'popupFadeOut 0.3s ease';
+                
+                setTimeout(() => {
+                    popupOverlay.style.display = 'none';
+                    document.body.style.overflow = 'auto'; // Restaurar scroll
+                    
+                    // Marcar que ya se mostró en esta sesión
+                    sessionStorage.setItem('popupAnoNuevoMostrado', 'true');
+                }, 300);
+            }
+        }
+
+        // Agregar animación de fade out
+        const popupStyles = document.createElement('style');
+        popupStyles.textContent = `
+            @keyframes popupFadeOut {
+                from { opacity: 1; }
+                to { opacity: 0; }
+            }
+        `;
+        document.head.appendChild(popupStyles);
