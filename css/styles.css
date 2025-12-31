@@ -1285,13 +1285,13 @@ body {
     }
 }
 
-   POPUP AÑO NUEVO 2026
+   /* POPUP AÑO NUEVO 2026
    Para DESACTIVAR: cambiar .popup-overlay display a "none"
    Para ACTIVAR: cambiar .popup-overlay display a "flex"
    ======================================== */
 
 .popup-overlay {
-    display: none; /* ← CAMBIAR A "flex" PARA ACTIVAR EL POPUP */
+    display: flex; /* ← CAMBIAR de "none" A "flex" PARA ACTIVAR EL POPUP */
     position: fixed;
     top: 0;
     left: 0;
