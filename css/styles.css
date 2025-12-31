@@ -1285,13 +1285,9 @@ body {
     }
 }
 
-   /* POPUP AÑO NUEVO 2026
-   Para DESACTIVAR: cambiar .popup-overlay display a "none"
-   Para ACTIVAR: cambiar .popup-overlay display a "flex"
-   ======================================== */
-
+/* POPUP AÑO NUEVO 2026 */
 .popup-overlay {
-    display: none; /* ← CAMBIAR de "none" A "flex" PARA ACTIVAR EL POPUP */
+    display: none; /* ← CAMBIAR A "flex" PARA ACTIVAR / "none" PARA DESACTIVAR */
     position: fixed;
     top: 0;
     left: 0;
@@ -1328,6 +1324,8 @@ body {
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
     animation: popupSlideIn 0.6s ease;
     border: 3px solid #f39c12;
+    max-height: 90vh; /* ← NUEVO: Limita altura total */
+    overflow-y: auto; /* ← NUEVO: Scroll si es muy largo */
 }
 
 @keyframes popupSlideIn {
@@ -1343,18 +1341,18 @@ body {
 
 .popup-close {
     position: absolute;
-    top: 15px;
-    right: 15px;
+    top: 10px; /* ← AJUSTADO: Más cerca del borde */
+    right: 10px; /* ← AJUSTADO: Más cerca del borde */
     width: 40px;
     height: 40px;
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(0, 0, 0, 0.8); /* ← MEJORADO: Fondo más oscuro */
     border: 2px solid white;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    z-index: 10;
+    z-index: 100000; /* ← MEJORADO: Z-index muy alto */
     transition: all 0.3s;
     color: white;
     font-size: 24px;
@@ -1363,14 +1361,14 @@ body {
 
 .popup-close:hover {
     background: #f39c12;
-    transform: rotate(90deg);
+    transform: rotate(90deg) scale(1.1); /* ← MEJORADO: Efecto hover */
     border-color: #f39c12;
 }
 
 .popup-image {
     width: 100%;
-    height: 300px;
-    object-fit: cover;
+    max-height: 250px; /* ← CORREGIDO: Altura máxima fija */
+    object-fit: cover; /* ← CORREGIDO: Recorta bien la imagen */
     display: block;
 }
 
@@ -1439,7 +1437,7 @@ body {
     }
 
     .popup-image {
-        height: 200px;
+        max-height: 180px; /* ← AJUSTADO: Más pequeño en móvil */
     }
 
     .popup-content {
@@ -1458,4 +1456,12 @@ body {
         font-size: 0.9rem;
         padding: 12px;
     }
- }
+    
+    .popup-close {
+        top: 8px; /* ← AJUSTADO: Mejor posición en móvil */
+        right: 8px;
+        width: 36px;
+        height: 36px;
+        font-size: 20px;
+    }
+}
