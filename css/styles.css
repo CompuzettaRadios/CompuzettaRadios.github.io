@@ -1284,3 +1284,206 @@ body {
         font-size: 1.5rem;
     }
 }
+
+        /* ========================================
+           POPUP AÑO NUEVO 2026
+           Para activar/desactivar: cambiar .popup-overlay { display: none; } a { display: flex; }
+           ======================================== */
+        
+        .popup-overlay {
+            display: flex; /* ← CAMBIAR A "none" PARA DESACTIVAR EL POPUP */
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.85);
+            backdrop-filter: blur(8px);
+            z-index: 99999;
+            align-items: center;
+            justify-content: center;
+            animation: popupFadeIn 0.5s ease;
+            padding: 20px;
+        }
+
+        @keyframes popupFadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        .popup-container {
+            position: relative;
+            max-width: 600px;
+            width: 100%;
+            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+            animation: popupSlideIn 0.6s ease;
+            border: 3px solid #f39c12;
+        }
+
+        @keyframes popupSlideIn {
+            from {
+                transform: scale(0.8) translateY(-50px);
+                opacity: 0;
+            }
+            to {
+                transform: scale(1) translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .popup-close {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.2);
+            border: 2px solid white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            z-index: 10;
+            transition: all 0.3s;
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .popup-close:hover {
+            background: #f39c12;
+            transform: rotate(90deg);
+            border-color: #f39c12;
+        }
+
+        .popup-image {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .popup-content {
+            padding: 30px;
+            text-align: center;
+            color: white;
+        }
+
+        .popup-title {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #f39c12;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .popup-text {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 15px;
+            color: #ecf0f1;
+        }
+
+        .popup-verse {
+            font-style: italic;
+            color: #f39c12;
+            font-size: 1rem;
+            margin: 20px 0;
+            padding: 15px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            border-left: 4px solid #f39c12;
+        }
+
+        .popup-signature {
+            margin-top: 25px;
+            font-size: 1rem;
+            color: #95a5a6;
+            font-weight: 500;
+        }
+
+        .popup-signature strong {
+            color: #f39c12;
+            display: block;
+            font-size: 1.2rem;
+            margin-top: 5px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .popup-container {
+                max-width: 95%;
+                border-radius: 15px;
+            }
+
+            .popup-image {
+                height: 200px;
+            }
+
+            .popup-content {
+                padding: 20px;
+            }
+
+            .popup-title {
+                font-size: 1.5rem;
+            }
+
+            .popup-text {
+                font-size: 1rem;
+            }
+
+            .popup-verse {
+                font-size: 0.9rem;
+                padding: 12px;
+            }
+        }
+
+        /* Demo body styling */
+        body {
+            font-family: 'Oswald', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            margin: 0;
+            padding: 40px 20px;
+            background: #f8fafc;
+            min-height: 100vh;
+        }
+
+        .demo-info {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .demo-info h1 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+
+        .demo-info code {
+            background: #f39c12;
+            color: white;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-family: monospace;
+        }
+
+        .demo-info pre {
+            background: #2c3e50;
+            color: white;
+            padding: 15px;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin: 15px 0;
+        }
