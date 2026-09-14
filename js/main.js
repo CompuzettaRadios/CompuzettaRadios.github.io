@@ -8,7 +8,7 @@ if ('serviceWorker' in navigator) {
     });
 }
 
-// Radio Player - CONFIGURACIÓN ACTUALIZADA PARA SONICPANEL (ICECAST)
+// Radio Player - CONFIGURACIÓN NATIVA SIN REDIRECCIÓN
 const radioURL = 'https://radiostreaming.pro';
 let audio = null;
 let isPlaying = false;
