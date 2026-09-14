@@ -8,10 +8,11 @@ if ('serviceWorker' in navigator) {
     });
 }
 
-// Radio Player
-const radioURL = 'https://cast6.asurahosting.com/proxy/manrique/stream';
+// Radio Player - CONFIGURACIÓN ACTUALIZADA PARA SONICPANEL (ICECAST)
+const radioURL = 'https://radiostreaming.pro';
 let audio = null;
 let isPlaying = false;
+
 
 const playBtn = document.getElementById('playBtn');
 const playIcon = document.querySelector('.play-icon');
