@@ -8,10 +8,11 @@ if ('serviceWorker' in navigator) {
     });
 }
 
-// Radio Player - CONFIGURACIÓN NATIVA SIN REDIRECCIÓN
-const radioURL = 'https://radiostreaming.pro';
+// Radio Player - CONFIGURACIÓN PARA TU NUEVO PLAN PRO
+const radioURL = 'https://radiostreaming.pro/8404/stream';
 let audio = null;
 let isPlaying = false;
+
 
 
 const playBtn = document.getElementById('playBtn');
